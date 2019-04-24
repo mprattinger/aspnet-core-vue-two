@@ -14,3 +14,8 @@ new Vue({
     el: '#app-root',
     render: h => h(require('./components/app/app.vue.html'))
 });
+
+new Vue({
+    el: '#emp-app-root',
+    render: h => h(require('./components/employee-app/emp-app.vue.html'))
+});

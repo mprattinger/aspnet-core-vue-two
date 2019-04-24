@@ -8,9 +8,10 @@
 <div id="mainnav" class="collapse" onclick="toggleNavMenu()">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
-            <a asp-page="/Employees/Index">
+            <!-- <a asp-page="/Employees/Index">
                 <span class="oi oi-people" aria-hidden="true"></span> Mitarbeiter
-            </a>
+            </a> -->
+            <a asp-controller="Employees" asp-action="Index">Mitarbeiter</a>
         </li>
         @*<li class="nav-item px-3">
             <a href="#"><span class="oi oi-calendar" aria-hidden="true"></span> Feiertage</a>
