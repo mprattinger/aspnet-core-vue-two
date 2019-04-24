@@ -1,0 +1,25 @@
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="/">Time<span>Manager</span></a>
+    <button class="navbar-toggler" onclick="toggleNavMenu()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div id="mainnav" class="collapse" onclick="toggleNavMenu()">
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <a asp-page="/Employees/Index">
+                <span class="oi oi-people" aria-hidden="true"></span> Mitarbeiter
+            </a>
+        </li>
+        @*<li class="nav-item px-3">
+            <a href="#"><span class="oi oi-calendar" aria-hidden="true"></span> Feiertage</a>
+        </li>*@
+        <li class="nav-item px-3">
+            <a href="#"><span class="oi oi-sun" aria-hidden="true"></span> Urlaubs Anträge</a>
+        </li>
+        <li class="nav-item px-3">
+            <a href="#"><span class="oi oi-cog" aria-hidden="true"></span> Tools</a>
+        </li>
+    </ul>
+</div>
